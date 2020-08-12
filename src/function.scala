@@ -17,12 +17,10 @@ object Add{
         System.nanoTime
     }
     def delayed1(t:Long,a:Int) = { // 传值调用
-        a = 2
         println("在delayed方法内")
         println("参数: "+t)
     }
     def delayed2(t: =>Long,a:Int) = { // 传名调用
-        a = 1
         println("在delayed方法内")
         println("参数: "+t)
     }
